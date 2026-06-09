@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate Bhai Zone 😭🔥</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="noise"></div>
+
+<div class="confetti-layer" id="confettiLayer"></div>
+
+<div class="toast" id="toast">
+  Achievement unlocked 😭🔥
+</div>
+
+<main class="page">
+
+<section class="hero">
+
+<div class="hero__content">
+
+<p class="eyebrow">
+  Official Desi Sibling Tamasha 💀
+</p>
+
+<h1>
+  Happy Brother's Day,
+  <span id="brotherName">Bhai</span>!
+</h1>
+
+<p class="hero__message">
+  Bhaiiiii aap irritating bhi ho,
+  funny bhi ho,
+  or ghar ka 2nd bhaauuu bhaaauuu bhi 😭🔥
+  <br><br>
+  Isliye apke liye bana hai ye
+  ultimate Desi Brother Fun Zone —
+  jaha milega roast,
+  awards,
+  memes,
+  challenges
+  or embarrassing moments ka full collection 💀
+</p>
+
+<div class="hero__actions">
+
+<button class="primary-button" id="startButton">
+  Tamasha Start Karo
+</button>
+
+<button class="secondary-button" id="randomChaosButton">
+  Random Bakwas
+</button>
+
+<button class="icon-button" id="musicButton">
+  ♪
+</button>
+
+</div>
+</div>
+
+<div class="arcade">
+
+<div class="arcade__screen">
+
+<div class="pixel-sun"></div>
+
+<div class="cloud cloud--one"></div>
+<div class="cloud cloud--two"></div>
+
+<div class="bro-face">
+
+<div class="hair"></div>
+
+<div class="eye eye--left"></div>
+<div class="eye eye--right"></div>
+
+<div class="mouth"></div>
+
+<div class="crown">
+ Bhaauu Bhaauu 🤣
+</div>
+
+</div>
+
+<div class="score-board">
+  <span>Coolness</span>
+  <strong>999+</strong>
+</div>
+
+</div>
+
+<div class="joystick"></div>
+
+<div class="arcade-buttons">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+</div>
+
+</section>
+
+<section class="dashboard" id="funZone">
+
+<div class="section-title">
+  <p class="eyebrow">
+    Explore Everything 😈
+  </p>
+
+  <h2>
+    Bhai Control Room
+  </h2>
+</div>
+
+<div class="stats-bar">
+
+<div>
+  <span id="chaosScore">0</span>
+  <p>Bakwas Points</p>
+</div>
+
+<div>
+  <span id="laughMeter">0%</span>
+  <p>Hassi Meter</p>
+</div>
+
+<div>
+  <span id="badgeCount">0/6</span>
+  <p>Unlocked Badges</p>
+</div>
+
+</div>
+
+<div class="panel-grid">
+
+<article class="panel roast-panel">
+
+<div class="panel__top">
+<span class="panel-icon">😂</span>
+<h3>Roast Machine</h3>
+</div>
+
+<p id="roastText">
+Button dabao or Bhauu Bhauu ki beizzati shuru kro 😭
+</p>
+
+<button class="small-button" id="roastButton">
+Bhaauu Bhaauu Ko Roast Kro
+</button>
+
+</article>
+
+<article class="panel">
+
+<div class="panel__top">
+<span class="panel-icon">🧠</span>
+<h3>Bhai Quiz</h3>
+</div>
+
+<p id="quizQuestion">
+Bhaauu Bhaauu ka sbse khrab kaam kya h?
+</p>
+
+<div class="quiz-options" id="quizOptions"></div>
+
+<p class="result-text" id="quizResult">
+Soch samajh ke choose karo 👀
+</p>
+
+</article>
+
+<article class="panel wheel-panel">
+
+<div class="panel__top">
+<span class="panel-icon">🎡</span>
+<h3>Kismat Wheel</h3>
+</div>
+
+<div class="wheel" id="wheel">
+<span>PAPA JI</span>
+<span>MUMMA</span>
+<span>KOMAL</span>
+<span>ARJU</span>
+</div>
+
+<p id="dareText">
+Spin karke apni kismat dekho 😈
+</p>
+
+<button class="small-button" id="spinButton">
+Kismat Ghumao
+</button>
+
+</article>
+
+<article class="panel game-panel">
+
+<div class="panel__top">
+<span class="panel-icon">🍕</span>
+<h3>Snack Catch</h3>
+</div>
+
+<div class="game-area" id="gameArea">
+
+<button class="snack" id="snackButton">
+🍕
+</button>
+
+</div>
+
+<div class="game-footer">
+
+<p>
+Snacks caught:
+<strong id="snackScore">0</strong>
+</p>
+
+<button class="small-button" id="resetSnackButton">
+Reset
+</button>
+
+</div>
+
+</article>
+
+<article class="panel awards-panel">
+
+<div class="panel__top">
+<span class="panel-icon">🏆</span>
+<h3>Fake Awards</h3>
+</div>
+
+<div class="award-list">
+
+<button class="award-card" data-badge="1">
+Aalshi no.1
+</button>
+
+<button class="award-card" data-badge="2">
+Kaamchor
+</button>
+
+<button class="award-card" data-badge="3">
+Inactive CEO
+</button>
+
+<button class="award-card" data-badge="4">
+BHAAUU BHAAUU no.2 
+</button>
+
+<button class="award-card" data-badge="5">
+Illogical mind
+</button>
+
+<button class="award-card" data-badge="6">
+KUCH BHI MATLAB ? 🥸
+</button>
+
+</div>
+
+</article>
+
+<article class="panel prank-panel">
+
+<div class="panel__top">
+<span class="panel-icon">😈</span>
+<h3>Don't click</h3>
+</div>
+
+<p id="prankText">
+Ye button suspiciously innocent lag raha hai 💀
+</p>
+
+<div class="run-zone">
+
+<button class="danger-button" id="prankButton">
+Don't click 😭
+</button>
+
+</div>
+
+</article>
+
+</div>
+
+<section class="gallery-section">
+
+<div class="section-title section-title--small">
+
+<p class="eyebrow">
+Rare footage leaked 📸
+</p>
+
+<h2>
+Legendary Bhai Gallery
+</h2>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-card">
+<img src="bro1.jpg">
+<p>bhaauu bhaauu 🤪</p>
+</div>
+
+<div class="gallery-card">
+<img src="bro2.jpg">
+<p>bhaauu bhaauu 😴</p>
+</div>
+
+<div class="gallery-card">
+<img src="bro3.jpg">
+<p>bhaauu bhaauu 🥹</p>
+</div>
+
+<div class="gallery-card">
+<img src="bro4.jpg">
+<p>bhaauu bhaauu💀</p>
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
